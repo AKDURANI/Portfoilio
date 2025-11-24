@@ -12,8 +12,9 @@ const Footer = () => {
               Muhammad Ali Khan Portfolio
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Computer Science graduate specializing in AI/ML, passionate about building 
-              intelligent systems that solve real-world problems.
+              AI Engineer specializing in Agentic AI and Generative models, dedicated to architecting autonomous
+              systems that solve complex real-world challenges.
+
             </p>
           </div>
 

@@ -5,6 +5,17 @@ import { Card, CardContent } from '@/components/ui/card';
 const TechStack = () => {
   const skillCategories = [
     {
+      title: 'Agentic AI Development',
+      skills: [
+        { name: 'Python', level: 92 },
+        { name: 'Langchain', level: 88 },
+        { name: 'Langgraph', level: 85 },
+        { name: 'langsmith', level: 80 },
+        { name: 'Streamlit', level: 78 },
+        { name: 'FastAPI', level: 75 }
+      ]
+    },
+    {
       title: 'AI/ML & Data Science',
       skills: [
         { name: 'Python', level: 95 },
@@ -26,35 +37,27 @@ const TechStack = () => {
         { name: 'Linux', level: 85 }
       ]
     },
-    {
-  title: 'Virtual Reality Development',
-  skills: [
-    { name: 'Python', level: 92 },
-    { name: 'Flask', level: 88 },
-    { name: 'Unity (C#)', level: 85 },
-    { name: 'Gaussian Splatting', level: 80 },
-    { name: 'COLMAP', level: 78 },
-    { name: 'PostgreSQL', level: 75 }
-  ]
-},
-
 
     {
       title: 'Specialized',
       skills: [
-        { name: 'Computer Vision', level: 88 },
+        { name: 'Agentic AI', level: 88 },
         { name: 'NLP', level: 85 },
-        { name: 'Unity/VR', level: 80 },
-        { name: 'Medical Imaging', level: 75 },
+        { name: 'Generative AI', level: 80 },
+        { name: 'MLOps', level: 75 },
         { name: 'Microservices', level: 82 },
-        { name: 'API Design', level: 88 }
+        { name: 'Deep Learning', level: 88 }
       ]
     }
   ];
 
   const certifications = [
-    'NLP Intern (Artificial Intelligence and Machine Learning Lab)',
-    'Teaching Assistant (Statistical Modeling)'
+    'Agentic AI Intern (VulnautAI)',
+    'Foundation: Introduction to LangGraph (Langchain Academy)',
+    'Machine Learning Specialization (DeepLearning.ai)',
+    'Deep Learning Specialization (DeepLearning.ai)',
+    'Generative AI Applications with RAG and LangChain (IBM)',
+    'NLP Intern (Artificial Intelligence and Machine Learning Lab)'
   ];
 
   return (
@@ -66,7 +69,7 @@ const TechStack = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive expertise across AI/ML, cloud technologies, and modern development practices
+            Comprehensive expertise across Agenitc AI, Generative AI and modern development practices
           </p>
         </div>
 
@@ -104,9 +107,9 @@ const TechStack = () => {
           <h3 className="text-2xl font-bold mb-8">Technologies I Work With</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              'Python', 'PyTorch', 'TensorFlow', 'Docker', 'GRPC', 'Kubernetes',
+              'Python', 'Langchain', 'langgraph', 'langsmith', 'streamlit', 'fastapi', 'PyTorch', 'TensorFlow', 'Docker', 'GRPC', 'Kubernetes',
               'Flask', 'FastAPI', 'PostgreSQL', 'MongoDB',
-              '3DGS', 'Pandas', 'Grafana', 'Unity', 'Linux', 'Git'
+              'Pandas', 'Grafana', 'Linux', 'Git'
             ].map((tech, index) => (
               <span
                 key={index}

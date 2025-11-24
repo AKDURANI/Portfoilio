@@ -7,23 +7,23 @@ const About = () => {
   const highlights = [
     {
       icon: Brain,
-      title: 'AI/ML Expertise',
-      description: 'Deep learning, neural networks, and intelligent system design'
+      title: 'Agentic AI Expertise',
+      description: 'Langchain, Langgraph, and Langsmith agentic systems implementation'
     },
     {
       icon: Code,
-      title: 'Flask-Based Microservices Development',
+      title: 'AI/ML Expertise',
+      description: 'Generative AI, LLMs, and NLP intelligent system design'
+    },
+    {
+      icon: Zap,
+      title: 'Microservices Development',
       description: 'End-to-end solutions using a Flask-based microservices architecture'
     },
     {
       icon: Cloud,
-      title: 'Cloud & DevOps',
-      description: 'Scalable infrastructure with Docker, GCP, and monitoring'
-    },
-    {
-      icon: Zap,
-      title: 'Innovation Focus',
-      description: 'Transforming complex problems into elegant solutions'
+      title: 'Cloud & MLOps',
+      description: 'Scalable infrastructure with Docker, AWS, and Prometheus'
     }
   ];
 
@@ -40,20 +40,20 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate Computer Science graduate with a specialization in Artificial Intelligence. 
-              My journey in tech has been driven by curiosity and the desire to create intelligent systems 
-              that solve real-world problems.
-            </p>
-            
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              From developing immersive VR real estate platforms to building sophisticated neural networks 
-              for medical imaging, I thrive on tackling complex challenges that push the boundaries of 
-              what's possible with technology.
+              I am a dedicated AI Engineer specializing in Generative AI and Natural Language Processing (NLP).
+              My professional focus is driven by a commitment to architecting intelligent systems that move
+              beyond simple automation to solve complex, real-world problems.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My expertise spans across machine learning, cloud computing, and modern software development, 
-              with a strong focus on creating scalable, efficient, and user-centric solutions.
+              From engineering autonomous Agentic AI workflows to fine-tuning Large Language Models (LLMs)
+              for custom use cases, I thrive on building sophisticated architectures that utilize advanced
+              reasoning to push the boundaries of what is possible with modern technology.
+            </p>
+
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              My expertise spans across advanced machine learning, cloud computing, and full-stack integration,
+              with a strong focus on creating scalable, efficient, and production-ready AI solutions.
             </p>
 
             <div className="pt-6">
@@ -61,15 +61,15 @@ const About = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Building intelligent systems that make a difference
+                  Architecting autonomous, reasoning-based Agentic AI systems
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Continuous learning and staying at the forefront of AI innovation
+                  Driving innovation in Generative AI and LLM integration
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Collaborating with teams to create impactful solutions
+                  Delivering scalable, high-impact technical solutions
                 </li>
               </ul>
             </div>

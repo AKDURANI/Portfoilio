@@ -9,30 +9,30 @@ const FeaturedProjects = () => {
 
   const projects = [
     {
-      title: 'VR Real Estate Platform',
-      description: 'Immersive virtual reality platform for property exploration with realistic 3D environments, interactive tours, and real-time property analytics.',
+      title: 'Travel Planning AI Platform',
+      description: 'Agentic AI system for personalized trip planning with itinerary generation, multi-agent collaboration, and real-time optimization.',
       image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop',
-      tech: ['Unity', 'C#', '3DGS', 'COLMAP'],
-      category: 'VR/AR Development',
-      github: 'https://github.com/MHuzaifa191/Palantir-360',
+      tech: ['Python', 'Streamlit', 'Langchain', 'Langgraph'],
+      category: 'Agentic AI',
+      github: 'https://github.com/AKDURANI/Travel-AI',
+      demo: '#'
+    },
+    {
+      title: 'AI Psychiatrist Chatbot',
+      description: 'Therapeutic AI agent supporting people with clinical-grade natural language understanding and specialist recommendations.',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
+      tech: ['Python', 'Streamlit/Twilio', 'Langchain', 'Langgraph'],
+      category: 'Agentic AI',
+      github: 'https://github.com/AKDURANI/Psychiatrist-AI',
       demo: '#'
     },
     {
       title: 'Multilingual AI Chatbot',
       description: 'Advanced conversational AI supporting multiple languages with natural language processing, context awareness, and sentiment analysis.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
-      tech: ['Python', 'PyTorch', 'Transformers', 'Flask'],
-      category: 'AI/ML',
-      github: 'https://github.com/AKDURANI/Multilingual-Voice-Chatbot',
-      demo: '#'
-    },
-    {
-      title: 'Brain Tumor Segmentation',
-      description: 'Deep learning model for medical imaging analysis, achieving high accuracy in brain tumor detection and segmentation using CNN architectures.',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
-      tech: ['PyTorch', 'ResNet', 'Medical Imaging', 'CNN'],
-      category: 'Medical AI',
-      github: 'https://github.com/AKDURANI/BrainTumorDetector_pytorch_fromscratch',
+      tech: ['Python', 'PyTorch', 'Transformers', 'Flask'],
+      category: 'NLP/Generative AI',
+      github: 'https://github.com/AKDURANI/Multilingual-Voice-Chatbot',
       demo: '#'
     },
     {
@@ -63,7 +63,7 @@ const FeaturedProjects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Showcasing innovative solutions that demonstrate my expertise in AI, VR, and cloud technologies
+            Showcasing innovative solutions that demonstrate my expertise in Agentic AI, NLP, Generative AI, and cloud technologies
           </p>
         </div>
 
@@ -82,12 +82,12 @@ const FeaturedProjects = () => {
                   </span>
                 </div>
               </div>
-              
+
               <CardContent className="p-8 flex flex-col justify-center">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
                   {projects[currentProject].title}
                 </h3>
-                
+
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {projects[currentProject].description}
                 </p>
@@ -106,21 +106,13 @@ const FeaturedProjects = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <Button 
-                    className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                <div>
+                  <Button
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
                     onClick={() => window.open(projects[currentProject].github, '_blank')}
                   >
                     <Github className="w-4 h-4 mr-2" />
                     View Code
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    className="flex-1"
-                    onClick={() => window.open(projects[currentProject].demo, '_blank')}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
                   </Button>
                 </div>
               </CardContent>
@@ -143,11 +135,10 @@ const FeaturedProjects = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentProject(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentProject
-                      ? 'bg-gradient-to-r from-blue-600 to-purple-600 w-8'
-                      : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentProject
+                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 w-8'
+                    : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
+                    }`}
                 />
               ))}
             </div>
@@ -168,9 +159,8 @@ const FeaturedProjects = () => {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className={`cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${
-                index === currentProject ? 'ring-2 ring-blue-600' : ''
-              }`}
+              className={`cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${index === currentProject ? 'ring-2 ring-blue-600' : ''
+                }`}
               onClick={() => setCurrentProject(index)}
             >
               <div className="relative h-32">
